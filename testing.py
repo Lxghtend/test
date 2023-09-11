@@ -7,9 +7,10 @@ codes = ["2002", "3005", "2884", "2994", "1002", "1992", "3482", "7267", "3018",
 
 async def send_code():
         print("Press P on the Keyboard for the next code!")
+        code = iter(codes)
         while True:
             if keyboard.record(until="p"):
-                code = codes[+1]
+                
                 print(code)
                 #keyboard.send("2")
     
